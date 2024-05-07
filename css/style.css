@@ -1,4 +1,28 @@
-/* Created by: Mr. Coxall
-* Created on: Sep 2020
-* This file contains the CSS for index.html
-*/
+/* Body background color */
+body {
+    background-color: lightblue;
+}
+
+/* Header text color */
+header h1 {
+    color: rgb(255, 0, 0); /* Red color */
+}
+
+/* Styling for order form section */
+#orderForm {
+    background-color: lavender; /* Light purple */
+    border: 1px solid gray; /* Add border for order form */
+    padding: 10px; /* Add padding for order form */
+}
+
+/* Styling for order summary section */
+#orderSummary {
+    background-color: lightgreen; /* Light green */
+    border: 1px solid gray; /* Add border for order summary */
+    padding: 10px; /* Add padding for order summary */
+}
+
+/* Order summary heading color */
+#orderSummary h2 {
+   
+}

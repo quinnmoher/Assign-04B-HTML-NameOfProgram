@@ -1,9 +1,100 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+<html lang="en">
+
+<head>
+    <!-- Character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Browser tab title and linking to styles and favicon -->
+    <title>Freaky Creamery</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Main heading -->
+    <header>
+        <h1>Welcome to Freaky Creamery!</h1>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Form section for ice cream customization -->
+        <section id="orderForm">
+            <!-- Form heading -->
+            <h2>Create Your Ice Cream</h2>
+            <!-- Ice cream customization form -->
+            <form id="iceCreamForm">
+                <!-- Size selection dropdown -->
+                <label for="size">Size:</label>
+                <select id="size" name="size">
+                    <!-- Option for each ice cream size -->
+                    <option value="tiny">Tiny ($4.99)</option>
+                    <option value="averageJoe">Average Joe ($6.99)</option>
+                    <option value="freaky">Freaky ($8.99)</option>
+                    <option value="colossal">COLOSSAL ($15.99)</option>
+                </select>
+                <br>
+                <!-- Toppings checkboxes -->
+                <label>Toppings:</label><br>
+                <input type="checkbox" id="blueberries" name="topping" value="blueberries">
+                <label for="blueberries">Blueberries ($1.20, 20 Cal)</label><br>
+                <input type="checkbox" id="nuttyButterCups" name="topping" value="nuttyButterCups">
+                <label for="nuttyButterCups">Nutty Butter Cups ($1.20, 100 Cal)</label><br>
+                <input type="checkbox" id="cookieDough" name="topping" value="cookieDough">
+                <label for="cookieDough">Cookie Dough ($1.20, 60 Cal)</label><br>
+                <input type="checkbox" id="whippedCream" name="topping" value="whippedCream">
+                <label for="whippedCream">Whipped Cream ($0.80, 25 Cal)</label><br>
+                <input type="checkbox" id="rainbowSprinkles" name="topping" value="rainbowSprinkles">
+                <label for="rainbowSprinkles">Rainbow Sprinkles ($1.20, 100 Cal)</label><br>
+
+                
+              
+                <!-- Button to calculate total -->
+                <button type="button" onclick="calculateTotal()">Calculate Total</button>
+            </form>
+        </section>
+
+        <!-- Order summary section -->
+        <section id="orderSummary">
+            <!-- Order summary heading -->
+            <h2>Order Summary</h2>
+            <!-- Display total cost -->
+            <p id="orderTotal">Your total: $0.00</p>
+            <!-- Display ice cream image -->
+            <img src="./images/Freaky Creamery logo.jpg" alt="Default Ice Cream" id="iceCreamImage" style="float: right;">
+        </section>
+
+        
+        </div>
+    </main>
+
+    <!-- Nutritional facts dropdown at the bottom of the page -->
+    <footer>
+        <h3>Nutritional Facts</h3>
+        <select id="nutritionalFactsFooter" name="nutritionalFactsFooter">
+            <option value="blueberries">Blueberries (20 Cal)</option>
+            <option value="nuttyButterCups">Nutty Butter Cups (100 Cal)</option>
+            <option value="cookieDough">Cookie Dough (60 Cal)</option>
+            <option value="whippedCream">Whipped Cream (25 Cal)</option>
+            <option value="rainbowSprinkles">Rainbow Sprinkles (100 Cal)</option>
+            
+            <option value="Tiny"> Tiny Size (1100 Cal)</option>
+            <option value="AvreageJoe"> Avreage Size (1700 Cal)
+                <option value="Freaky"> Freaky Size (1958 Cal)
+                    <option value="COLOSSAL"> COLOSSAL Size (2406 Cal)</option>
+                </option>
+            </option>
+        </select>
+    </footer>
+
+    <!-- Script for dynamic behavior -->
+    <script src="./js/script.js"></script>
+    <!-- Script for handling payment button clicks -->
+    <script src="./js/payment.js"></script>
+</body>
+
 </html>
